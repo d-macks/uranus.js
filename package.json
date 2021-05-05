@@ -1,0 +1,23 @@
+{
+  "name": "uranus.js",
+  "version": "1.0.14",
+  "description": "A NodeJS library to interact with Kronos' API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-macks/uranus.js.git"
+  },
+  "author": "Max",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d-macks/uranus.js/issues"
+  },
+  "homepage": "https://github.com/d-macks/uranus.js#readme",
+  "dependencies": {
+    "got": "^11.8.2",
+    "noblox.js": "^4.8.5"
+  }
+}
