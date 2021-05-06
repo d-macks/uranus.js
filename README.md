@@ -2,11 +2,11 @@
 ### A library to interact with Kronos' V1 API
 
 
-Installation:
+### Installation:
 
 `npm i uranus.js`
 
-Sample Code:
+### Sample Code:
 
 ```js
 const Uranus = require('uranus.js');
@@ -16,15 +16,15 @@ Kronos.get.blacklist("PBST", "ROBLOX");
 Kronos.get.schedule("TMS");
 ```
 
-Current Methods:
+### Current Methods:
 
-get.schedule()
-_Parameter 1: Division_
+#### **get.schedule()**  
+_Parameter 1: **Division**_
 
  
 
-get.blacklist()
-_Parameter 1: Division_
-_Parameter 2: Username_
+#### **get.schedule()**  
+_Parameter 1: **Division**_  
+_Parameter 2: **Username**_
 
 
