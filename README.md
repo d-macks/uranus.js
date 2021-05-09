@@ -23,7 +23,7 @@ _Parameter 1: **Division**_
 
  
 
-#### **get.schedule()**  
+#### **get.blacklist()**  
 _Parameter 1: **Division**_  
 _Parameter 2: **Username**_
 
