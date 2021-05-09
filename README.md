@@ -1,5 +1,5 @@
 # Uranus.js
-### A library to interact with Kronos' V1 API
+## A library to interact with Kronos' V1 API
 
 
 ### Installation:
