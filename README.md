@@ -3,11 +3,11 @@
 
 ### This API is inspired by uurgothat(cocoakacoco)
 
-### Installation:
+## Installation:
 
 `npm i uranus.js`
 
-### Sample Code:
+## Sample Code:
 
 ```js
 const Uranus = require('uranus.js');
@@ -17,14 +17,14 @@ Kronos.get.blacklist("PBST", "ROBLOX");
 Kronos.get.schedule("TMS");
 ```
 
-### Current Methods:
+## Current Methods:
 
-#### **get.schedule()**  
+### **get.schedule()**  
 _Parameter 1: **Division**_
 
  
 
-#### **get.blacklist()**  
+### **get.blacklist()**  
 _Parameter 1: **Division**_  
 _Parameter 2: **Username**_
 
