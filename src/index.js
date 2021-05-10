@@ -7,22 +7,30 @@ class Kronos {
     }
 
     get = {
-        schedule : async (Division) => {
-            let promise = new Promise((resolve, reject) => {
-                got(`https://pb-kronos.dev/api/v2/schedule/${Division}`, {headers: {'Access-Key': this.key}}).then((data) => {
-                    resolve(data.body);
-                }).catch((err) => {
-                    reject(`${err.response.statusCode}: ${err.response.body}`);
-                })
-            })
-
-            if (!Division) {
+        schedule : async (Division, All) => {
+            if (!Division && !All) {
                 return console.error('[kronos.js] Parameter "Division" can not be let empty!');
             }
 
-            if (!["PBST", "PET", "TMS", "PBM"].includes(Division)) {
+            if (!["PBST", "PET", "TMS", "PBM"].includes(Division) && !All) {
                 return console.error(`[kronos.js] ${Division} is not a valid division! Valid divisions are: [PBST, PET, TMS, PBM]`);
             }
+
+            let promise = new Promise((resolve, reject) => {
+                if (All === false || !All) {
+                    got(`https://pb-kronos.dev/api/v2/schedule/${Division}`, {headers: {'Access-Key': this.key}}).then((data) => {
+                        resolve(data.body);
+                    }).catch((err) => {
+                        reject(`${err.response.statusCode}: ${err.response.body}`);
+                    })
+                } else {
+                    got(`https://pb-kronos.dev/api/v2/schedule/all`, {headers: {'Access-Key': this.key}}).then((data) => {
+                        resolve(data.body);
+                    }).catch((err) => {
+                        reject(`${err.response.statusCode}: ${err.response.body}`);
+                    })
+                }
+            })
 
             return await promise;
 
