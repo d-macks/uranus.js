@@ -16,7 +16,7 @@ class Kronos {
                 return console.error(`[kronos.js] ${Division} is not a valid division! Valid divisions are: [PBST, PET, TMS, PBM]`);
             }
 
-            got(`https://pb-kronos.dev/api/schedule/${Division}`, {headers: {'Access-Key': this.key}}).then((data) => {
+            got(`https://pb-kronos.dev/api/v2/schedule/${Division}`, {headers: {'Access-Key': this.key}}).then((data) => {
                 return JSON.parse(data.body);
             }).catch((err) => {
                 console.error(`${err.response.statusCode}: ${err.response.body}`);
