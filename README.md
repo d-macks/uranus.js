@@ -1,7 +1,7 @@
 # Uranus.js
-## A library to interact with Kronos' V1 API
+## A library to interact with Kronos' V1 and V2 API
 
-### This API is inspired by uurgothat(cocoakacoco)
+### This API is inspired by uurgothat (cocoakacoco)
 
 ## Installation:
 
